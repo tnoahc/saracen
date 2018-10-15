@@ -22,6 +22,10 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+ $primary: #4966b4;
+ $secondary: #5c8bd3;
+ $secondary-variant: #b1c3db;
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
@@ -30,18 +34,7 @@ html {
     position: relative;
     min-height: 100%;
   }
-  body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    color: #5a5a5a;
 
-    > .container {
-        padding: 60px 15px 0;
-      }
-  }
-  
   
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
@@ -86,11 +79,76 @@ html {
   /* Sticky footer styles
 -------------------------------------------------- */
   .footer {
-    position: absolute;
-    bottom: 0;
+      text-align: center;
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 60px;
     line-height: 60px; /* Vertically center the text there */
-    background-color: #f5f5f5;
+    background-color: $primary;
+    color: $secondary-variant;
   }
+  a {
+      color: $secondary;
+
+      &:hover {
+        color: $primary;
+      }
+  }
+  .nav-link{
+      text-transform: uppercase;
+      font-weight: 900;
+      text-align: center;
+      color: black !important;
+
+      &:hover {
+        color: $primary !important;
+      }
+  }
+
+  .material-icons {
+      display: block;
+      width: 100%;
+      color: $primary;
+      font-size: 36px !important;
+  }
+  #site-navigation {
+      box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.24);
+      background-color: white;
+  }
+  .navbar-toggler {
+      color: $primary;
+  }
+  .navbar-toggler-icon {
+      color: white;
+  }
+  .dropdown-menu {
+      padding: 0;
+      border: none;
+      border-radius: 0;
+  }
+  .dropdown-item {
+    text-transform: uppercase;
+    color: black;
+
+    &:hover {
+        background-color: $primary;
+        color: white;
+        font-weight: 900;
+        box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.24);
+    }
+  }
+  #toll-free {
+    font-weight: 900;
+    color: $primary;
+    text-align: right;
+    font-size: 1.5em;
+}
+.navbar-brand {
+
+    img {
+        position: absolute;
+        top: 0;
+        z-index: 999;
+    }
+    
+}
