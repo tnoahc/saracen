@@ -35,13 +35,17 @@ html {
     min-height: 100%;
   }
 
+  html, body {
+    /* Make the body to be as tall as browser window */
+    height: 100%;
+  }
   
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
   
   /* Carousel base class */
   .carousel {
-    margin-bottom: 4rem;
+    margin-bottom: 0;
   }
   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
@@ -52,7 +56,7 @@ html {
   /* Declare heights because of positioning of img element */
   .carousel-item {
     height: 32rem;
-    background-color: #777;
+    background-color: $secondary-variant;
 
     > img {
         position: absolute;
@@ -63,6 +67,25 @@ html {
       }
   }
   
+  /* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.content {
+    .col-lg-4 {
+    margin: 1.5rem 0;
+    text-align: center;
+
+    p {
+        margin-right: .75rem;
+        margin-left: .75rem;
+      }
+  }
+  h2 {
+    font-weight: 400;
+  }
+
+}
   
     /* RESPONSIVE CSS
   -------------------------------------------------- */
@@ -137,12 +160,17 @@ html {
         box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.24);
     }
   }
-  #toll-free {
-    font-weight: 900;
-    color: $primary;
-    text-align: right;
-    font-size: 1.5em;
-}
+  .site-header {
+    background-color: $primary;
+
+    #toll-free {
+        font-weight: 900;
+        color: white;
+        text-align: right;
+        font-size: 1.5em;
+    }
+  }
+
 .navbar-brand {
 
     img {
@@ -151,4 +179,10 @@ html {
         z-index: 999;
     }
     
+}
+.marketing {
+    margin: 0;
+    padding: 0;
+    background: $primary;
+    color: white;
 }
