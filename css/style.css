@@ -18,17 +18,17 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 /* GLOBAL STYLES
--------------------------------------------------- */
+ -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 html {
   position: relative;
   min-height: 100%;
 }
 
-html, body {
-  /* Make the body to be as tall as browser window */
-  height: 100%;
+body {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* Slideshow container */
@@ -144,7 +144,7 @@ html, body {
 }
 
 /* Sticky footer styles
--------------------------------------------------- */
+ -------------------------------------------------- */
 .footer {
   text-align: center;
   width: 100%;
