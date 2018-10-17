@@ -32,7 +32,8 @@ a:hover {
   background-color: #4966b4;
   color: white;
   font-weight: 700;
-  text-align: right;
+  text-align: center;
+  font-size: 1.5em;
 }
 
 /* Site Navigation
@@ -81,7 +82,7 @@ a:hover {
 .dropdown .dropdown-menu .dropdown-item:hover {
   background-color: #4966b4;
   color: white;
-  font-weight: 900;
+  font-weight: 700;
   -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.24);
           box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.24);
 }
@@ -266,6 +267,21 @@ a:hover {
 
 /* Footer
 -------------------------------------------------- */
+#widgets {
+  background-color: #202020;
+}
+
+#widgets h1, #widgets h2, #widgets h3, #widgets h4 {
+  color: white;
+  font-weight: 700;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+#widgets p {
+  color: #6d6d6d;
+}
+
 .site-footer {
   text-align: center;
   width: 100%;
