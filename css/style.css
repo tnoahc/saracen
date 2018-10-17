@@ -6,7 +6,7 @@ Author URI: http://kalebcreative.com/
 Version: 1.0.0 */
 /* Colours & Fonts
 -------------------------------------------------- */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,900");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900");
 /* GLOBAL STYLES
 -------------------------------------------------- */
 html {
@@ -31,7 +31,7 @@ a:hover {
 .toll-free {
   background-color: #4966b4;
   color: white;
-  font-weight: 600;
+  font-weight: 700;
   text-align: right;
 }
 
@@ -51,7 +51,7 @@ a:hover {
 
 #site-navigation .nav-item .nav-link {
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 700;
   text-align: center;
   color: black !important;
   padding: 0 2rem !important;
@@ -206,6 +206,10 @@ a:hover {
 
 /* Page Content
 -------------------------------------------------- */
+.site-content section .container {
+  padding: 5em;
+}
+
 .site-content section:nth-of-type(1) {
   background-color: white;
 }
@@ -214,24 +218,50 @@ a:hover {
   background-color: #4966b4;
 }
 
-.page-content {
+#page-content {
   display: block;
   width: 100%;
 }
 
-.page-content .container {
-  padding: 5em;
+#page-content .container {
   text-align: center;
   color: white !important;
 }
 
-.page-content .container h1 {
+#page-content .container h1 {
   text-transform: uppercase;
   font-weight: 900;
 }
 
-.page-content .container p {
-  font-size: 1.2em;
+#page-content .container p {
+  font-size: 1.5em;
+}
+
+/* Slide in Overlay */
+.figure .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: #4966b4;
+  padding: 1rem;
+}
+
+.figure .overlay p {
+  color: white;
+}
+
+.figure:hover .overlay {
+  opacity: 1;
+}
+
+.figure .figure-caption {
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 /* Footer

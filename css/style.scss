@@ -11,7 +11,7 @@ $primary: #4966b4;
 $secondary: #5c8bd3;
 $secondary-variant: #b1c3db;
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900');
 
 /* GLOBAL STYLES
 -------------------------------------------------- */
@@ -37,7 +37,7 @@ a {
 .toll-free {
     background-color: $primary;
     color: white;
-    font-weight: 600;
+    font-weight: 700;
     text-align: right;
 
 }
@@ -57,7 +57,7 @@ a {
     .nav-item {
         .nav-link {
             text-transform: uppercase;
-            font-weight: 900;
+            font-weight: 700;
             text-align: center;
             color: black !important;
             padding: 0 2rem !important;
@@ -220,7 +220,9 @@ a {
 .site-content {  
     
     section {
-        
+        .container {
+            padding: 5em;
+        }        
         &:nth-of-type(1) {
             background-color: white;
         }
@@ -228,15 +230,13 @@ a {
             background-color: $primary;
         }
     }
-
 }
 
-.page-content {   
+#page-content {   
     display: block;
     width: 100%;
     .container {
         //position: relative;
-        padding: 5em;
         text-align: center;
         color: white !important;
 
@@ -245,8 +245,38 @@ a {
             font-weight: 900;
         }
         p {
-            font-size: 1.2em;
+            font-size: 1.5em;
         }
+    }
+}
+/* Slide in Overlay */ 
+.figure {
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        //height: 100%;
+        //width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: $primary;
+        padding: 1rem;
+    
+        p {
+            color: white;
+            //text-align: center;
+            //font-size: 1.2em;
+        }
+        
+    }
+    &:hover .overlay {
+        opacity: 1;
+    }
+    .figure-caption {
+        text-transform: uppercase;
+        font-weight: 700;
     }
 }
 
