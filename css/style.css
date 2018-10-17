@@ -3,38 +3,99 @@ Theme Name: saracen
 Theme URI: http://saracen.co.ug/
 Author: Kaleb Creative Studio
 Author URI: http://kalebcreative.com/
-Description: Description
-Version: 1.0.0
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
-
-*/
-/*--------------------------------------------------------------
-# Normalize
---------------------------------------------------------------*/
-/* normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
-/* Document
-	 ========================================================================== */
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+Version: 1.0.0 */
+/* Colours & Fonts
+-------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,900");
 /* GLOBAL STYLES
- -------------------------------------------------- */
-/* Padding below the footer and lighter body text */
+-------------------------------------------------- */
 html {
   position: relative;
   min-height: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
-/* Slideshow container */
+a {
+  color: #5c8bd3;
+}
+
+a:hover {
+  color: #4966b4;
+}
+
+/* Toll Free
+-------------------------------------------------- */
+.toll-free {
+  background-color: #4966b4;
+  color: white;
+  font-weight: 600;
+  text-align: right;
+}
+
+/* Site Navigation
+-------------------------------------------------- */
+#site-navigation {
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.24);
+          box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.24);
+  background-color: white;
+}
+
+#site-navigation .navbar-brand img {
+  position: absolute;
+  top: 0;
+  z-index: 999;
+}
+
+#site-navigation .nav-item .nav-link {
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+  color: black !important;
+  padding: 0 2rem !important;
+}
+
+#site-navigation .nav-item .nav-link:hover {
+  color: #4966b4 !important;
+}
+
+#site-navigation .nav-item .nav-link .material-icons {
+  display: block;
+  width: 100%;
+  color: #4966b4;
+  font-size: 36px !important;
+}
+
+.dropdown .dropdown-menu {
+  padding: 0;
+  border-radius: 0;
+}
+
+.dropdown .dropdown-menu .dropdown-item {
+  text-transform: uppercase;
+  color: black;
+}
+
+.dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: #4966b4;
+  color: white;
+  font-weight: 900;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.24);
+          box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.24);
+}
+
+/* Qoutation Form
+-------------------------------------------------- */
+.qoutation-form {
+  position: absolute;
+}
+
+/* Slideshow
+-------------------------------------------------- */
 .slideshow-container {
-  max-width: 1920px;
-  height: 500px;
+  height: calc(100vh - 76px);
   position: relative;
   overflow: hidden;
 }
@@ -143,9 +204,39 @@ body {
   }
 }
 
-/* Sticky footer styles
- -------------------------------------------------- */
-.footer {
+/* Page Content
+-------------------------------------------------- */
+.site-content section:nth-of-type(1) {
+  background-color: white;
+}
+
+.site-content section:nth-of-type(2) {
+  background-color: #4966b4;
+}
+
+.page-content {
+  display: block;
+  width: 100%;
+}
+
+.page-content .container {
+  padding: 5em;
+  text-align: center;
+  color: white !important;
+}
+
+.page-content .container h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.page-content .container p {
+  font-size: 1.2em;
+}
+
+/* Footer
+-------------------------------------------------- */
+.site-footer {
   text-align: center;
   width: 100%;
   /* Set the fixed height of the footer here */
@@ -153,89 +244,6 @@ body {
   line-height: 60px;
   /* Vertically center the text there */
   background-color: #4966b4;
-  color: #b1c3db;
-}
-
-a {
-  color: #5c8bd3;
-}
-
-a:hover {
-  color: #4966b4;
-}
-
-.nav-link {
-  text-transform: uppercase;
-  font-weight: 900;
-  text-align: center;
-  color: black !important;
-}
-
-.nav-link:hover {
-  color: #4966b4 !important;
-}
-
-.material-icons {
-  display: block;
-  width: 100%;
-  color: #4966b4;
-  font-size: 36px !important;
-}
-
-#site-navigation {
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.24);
-          box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.24);
-  background-color: white;
-}
-
-.navbar-toggler {
-  color: #4966b4;
-}
-
-.navbar-toggler-icon {
-  color: white;
-}
-
-.dropdown-menu {
-  padding: 0;
-  border: none;
-  border-radius: 0;
-}
-
-.dropdown-item {
-  text-transform: uppercase;
-  color: black;
-}
-
-.dropdown-item:hover {
-  background-color: #4966b4;
-  color: white;
-  font-weight: 900;
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.24);
-          box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.24);
-}
-
-.site-header {
-  background-color: #4966b4;
-}
-
-.site-header #toll-free {
-  font-weight: 900;
-  color: white;
-  text-align: right;
-  font-size: 1.5em;
-}
-
-.navbar-brand img {
-  position: absolute;
-  top: 0;
-  z-index: 999;
-}
-
-.marketing {
-  margin: 0;
-  padding: 0;
-  background: #4966b4;
   color: white;
 }
 /*# sourceMappingURL=style.css.map */
