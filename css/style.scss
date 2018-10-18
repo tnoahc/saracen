@@ -40,6 +40,9 @@ a {
     font-weight: 700;
     text-align: center;
     font-size: 1.5em;
+    &:link {
+        color: white;
+    }
 
 }
 
