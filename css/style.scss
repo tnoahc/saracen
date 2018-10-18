@@ -7,9 +7,9 @@ Version: 1.0.0 */
 
 /* Colours & Fonts
 -------------------------------------------------- */
-$primary: #4966b4;
-$secondary: #5c8bd3;
-$secondary-variant: #b1c3db;
+$primary: #446CA9;
+$secondary: #6A86B8;
+$secondary-variant: #B9CBEA;
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900');
 
@@ -40,7 +40,7 @@ a {
     font-weight: 700;
     text-align: center;
     font-size: 1.5em;
-    &:link {
+    a {
         color: white;
     }
 
@@ -284,12 +284,13 @@ a {
     }
 }
 
-/* Footer
+/* Footer widgets
 -------------------------------------------------- */
 $widgets: #202020;
-$widgets-text: lighten($widgets , 30%);
+$widgets-text: lighten($widgets , 50%);
 #widgets {
     background-color: $widgets;
+    font-size: .9em;
 
     h1, h2, h3, h4 {
         color: white;
@@ -298,10 +299,26 @@ $widgets-text: lighten($widgets , 30%);
         text-transform: uppercase;
     }
     p {
-        color: $widgets-text;
+        color: $widgets-text;    }
+}
+
+.contact {
+    color: $widgets-text;
+    strong, span {
+        color: $secondary;
+    }
+    .material-icons {
+        font-size: 1.2em;
+        color: $secondary;
+    }
+    hr {
+        margin: .5rem 0;
+        border-top: 1px solid $widgets-text;
     }
 }
 
+/* Footer
+-------------------------------------------------- */
 .site-footer {
     text-align: center;
     width: 100%;

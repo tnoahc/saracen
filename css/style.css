@@ -19,24 +19,24 @@ body {
 }
 
 a {
-  color: #5c8bd3;
+  color: #6A86B8;
 }
 
 a:hover {
-  color: #4966b4;
+  color: #446CA9;
 }
 
 /* Toll Free
 -------------------------------------------------- */
 .toll-free {
-  background-color: #4966b4;
+  background-color: #446CA9;
   color: white;
   font-weight: 700;
   text-align: center;
   font-size: 1.5em;
 }
 
-.toll-free:link {
+.toll-free a {
   color: white;
 }
 
@@ -63,13 +63,13 @@ a:hover {
 }
 
 #site-navigation .nav-item .nav-link:hover {
-  color: #4966b4 !important;
+  color: #446CA9 !important;
 }
 
 #site-navigation .nav-item .nav-link .material-icons {
   display: block;
   width: 100%;
-  color: #4966b4;
+  color: #446CA9;
   font-size: 36px !important;
 }
 
@@ -84,7 +84,7 @@ a:hover {
 }
 
 .dropdown .dropdown-menu .dropdown-item:hover {
-  background-color: #4966b4;
+  background-color: #446CA9;
   color: white;
   font-weight: 700;
   -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.24);
@@ -220,7 +220,7 @@ a:hover {
 }
 
 .site-content section:nth-of-type(2) {
-  background-color: #4966b4;
+  background-color: #446CA9;
 }
 
 #page-content {
@@ -252,7 +252,7 @@ a:hover {
   opacity: 0;
   -webkit-transition: .5s ease;
   transition: .5s ease;
-  background-color: #4966b4;
+  background-color: #446CA9;
   padding: 1rem;
 }
 
@@ -269,10 +269,11 @@ a:hover {
   font-weight: 700;
 }
 
-/* Footer
+/* Footer widgets
 -------------------------------------------------- */
 #widgets {
   background-color: #202020;
+  font-size: .9em;
 }
 
 #widgets h1, #widgets h2, #widgets h3, #widgets h4 {
@@ -283,9 +284,29 @@ a:hover {
 }
 
 #widgets p {
-  color: #6d6d6d;
+  color: #a0a0a0;
 }
 
+.contact {
+  color: #a0a0a0;
+}
+
+.contact strong, .contact span {
+  color: #6A86B8;
+}
+
+.contact .material-icons {
+  font-size: 1.2em;
+  color: #6A86B8;
+}
+
+.contact hr {
+  margin: .5rem 0;
+  border-top: 1px solid #a0a0a0;
+}
+
+/* Footer
+-------------------------------------------------- */
 .site-footer {
   text-align: center;
   width: 100%;
@@ -293,7 +314,7 @@ a:hover {
   height: 60px;
   line-height: 60px;
   /* Vertically center the text there */
-  background-color: #4966b4;
+  background-color: #446CA9;
   color: white;
 }
 /*# sourceMappingURL=style.css.map */
