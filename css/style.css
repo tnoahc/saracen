@@ -15,21 +15,21 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
-  color: #6A86B8;
+  color: #6a86b8;
 }
 
 a:hover {
-  color: #446CA9;
+  color: #446ca9;
 }
 
 /* Toll Free
 -------------------------------------------------- */
 .toll-free {
-  background-color: #446CA9;
+  background-color: #446ca9;
   color: white;
   font-weight: 700;
   text-align: center;
@@ -54,6 +54,12 @@ a:hover {
   z-index: 999;
 }
 
+@media only screen and (max-width: 540px) {
+  #site-navigation .navbar-brand img {
+    display: none;
+  }
+}
+
 #site-navigation .nav-item .nav-link {
   text-transform: uppercase;
   font-weight: 700;
@@ -63,13 +69,13 @@ a:hover {
 }
 
 #site-navigation .nav-item .nav-link:hover {
-  color: #446CA9 !important;
+  color: #446ca9 !important;
 }
 
 #site-navigation .nav-item .nav-link .material-icons {
   display: block;
   width: 100%;
-  color: #446CA9;
+  color: #446ca9;
   font-size: 36px !important;
 }
 
@@ -84,7 +90,7 @@ a:hover {
 }
 
 .dropdown .dropdown-menu .dropdown-item:hover {
-  background-color: #446CA9;
+  background-color: #446ca9;
   color: white;
   font-weight: 700;
   -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.24);
@@ -105,13 +111,20 @@ a:hover {
   overflow: hidden;
 }
 
+@media only screen and (max-width: 720px) {
+  .slideshow-container {
+    height: 100%;
+  }
+}
+
 /* Hide the images by default */
 .mySlides {
   display: none;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -125,7 +138,9 @@ a:hover {
   /* On hover, add a black background color with a little bit see-through */
 }
 
-.prev:hover, .prev:hover, .next:hover, .next:hover {
+.prev:hover, .prev:hover,
+.next:hover,
+.next:hover {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
@@ -179,21 +194,22 @@ a:hover {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
+          animation-name: fade;
   -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+          animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
   from {
-    opacity: .4;
+    opacity: 0.4;
   }
   to {
     opacity: 1;
@@ -202,7 +218,7 @@ a:hover {
 
 @keyframes fade {
   from {
-    opacity: .4;
+    opacity: 0.4;
   }
   to {
     opacity: 1;
@@ -215,12 +231,21 @@ a:hover {
   padding: 5em;
 }
 
+.site-content section .container .col-md-12 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.site-content section .container .col-md-12 h1 {
+  font-weight: 900;
+}
+
 .site-content section:nth-of-type(1) {
   background-color: white;
 }
 
 .site-content section:nth-of-type(2) {
-  background-color: #446CA9;
+  background-color: #446ca9;
 }
 
 #page-content {
@@ -250,9 +275,9 @@ a:hover {
   left: 0;
   right: 0;
   opacity: 0;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-  background-color: #446CA9;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  background-color: #446ca9;
   padding: 1rem;
 }
 
@@ -273,10 +298,13 @@ a:hover {
 -------------------------------------------------- */
 #widgets {
   background-color: #202020;
-  font-size: .9em;
+  font-size: 0.9em;
 }
 
-#widgets h1, #widgets h2, #widgets h3, #widgets h4 {
+#widgets h1,
+#widgets h2,
+#widgets h3,
+#widgets h4 {
   color: white;
   font-weight: 700;
   font-size: 1.2em;
@@ -291,17 +319,18 @@ a:hover {
   color: #a0a0a0;
 }
 
-.contact strong, .contact span {
-  color: #6A86B8;
+.contact strong,
+.contact span {
+  color: #6a86b8;
 }
 
 .contact .material-icons {
   font-size: 1.2em;
-  color: #6A86B8;
+  color: #6a86b8;
 }
 
 .contact hr {
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   border-top: 1px solid #a0a0a0;
 }
 
@@ -314,7 +343,7 @@ a:hover {
   height: 60px;
   line-height: 60px;
   /* Vertically center the text there */
-  background-color: #446CA9;
+  background-color: #446ca9;
   color: white;
 }
 /*# sourceMappingURL=style.css.map */

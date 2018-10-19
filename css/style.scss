@@ -7,253 +7,273 @@ Version: 1.0.0 */
 
 /* Colours & Fonts
 -------------------------------------------------- */
-$primary: #446CA9;
-$secondary: #6A86B8;
-$secondary-variant: #B9CBEA;
- @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900');
+$primary: #446ca9;
+$secondary: #6a86b8;
+$secondary-variant: #b9cbea;
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900");
 /* GLOBAL STYLES
 -------------------------------------------------- */
 
 html {
-	position: relative;
-	min-height: 100%;
+  position: relative;
+  min-height: 100%;
 }
 body {
-	font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 a {
- color: $secondary;
- &:hover {
- color: $primary;
-}
+  color: $secondary;
+  &:hover {
+    color: $primary;
+  }
 }
 /* Toll Free
 -------------------------------------------------- */
 .toll-free {
- background-color: $primary;
-	color: white;
-	font-weight: 700;
-	text-align: center;
-	font-size: 1.5em;
- a {
- color: white;
-}
+  background-color: $primary;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.5em;
+  a {
+    color: white;
+  }
 }
 /* Site Navigation
 -------------------------------------------------- */
 #site-navigation {
-	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.24);
-	background-color: white;
- .navbar-brand {
- img {
- position: absolute;
- top: 0;
- z-index: 999;
-}
-}
-.nav-item {
- .nav-link {
- text-transform: uppercase;
- font-weight: 700;
- text-align: center;
- color: black !important;
- padding: 0 2rem !important;
- &:hover {
- color: $primary !important;
-}
- .material-icons {
- display: block;
- width: 100%;
- color: $primary;
- font-size: 36px !important;
-}
-}
-}
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.24);
+  background-color: white;
+  .navbar-brand {
+    img {
+      position: absolute;
+      top: 0;
+      z-index: 999;
+    }
+  }
+  @media only screen and (max-width: 540px) {
+    .navbar-brand {
+      img {
+        display: none;
+      }
+    }
+  }
+  .nav-item {
+    .nav-link {
+      text-transform: uppercase;
+      font-weight: 700;
+      text-align: center;
+      color: black !important;
+      padding: 0 2rem !important;
+      &:hover {
+        color: $primary !important;
+      }
+      .material-icons {
+        display: block;
+        width: 100%;
+        color: $primary;
+        font-size: 36px !important;
+      }
+    }
+  }
 }
 .dropdown {
- .dropdown-menu {
- padding: 0;
- //border: none;
- border-radius: 0;
- .dropdown-item {
- text-transform: uppercase;
- color: black;
- &:hover {
- background-color: $primary;
- color: white;
- font-weight: 700;
- box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.24);
-}
-}
-}
+  .dropdown-menu {
+    padding: 0;
+    //border: none;
+    border-radius: 0;
+    .dropdown-item {
+      text-transform: uppercase;
+      color: black;
+      &:hover {
+        background-color: $primary;
+        color: white;
+        font-weight: 700;
+        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.24);
+      }
+    }
+  }
 }
 /* Qoutation Form
 -------------------------------------------------- */
 .qoutation-form {
-	position: absolute;
+  position: absolute;
 }
 /* Slideshow
 -------------------------------------------------- */
 .slideshow-container {
- //max-width: 1920px;
- //height: 500px;
-	height: calc(100vh - 76px);
-	position: relative;
-	overflow: hidden;
+  height: calc(100vh - 76px);
+  position: relative;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 720px) {
+  .slideshow-container {
+    height: 100%;
+  }
 }
 /* Hide the images by default */
 
 .mySlides {
-	display: none;
+  display: none;
 }
 /* Next & previous buttons */
 
-.prev, .next {
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	width: auto;
-	margin-top: -22px;
-	padding: 16px;
-	font-weight: bold;
-	font-size: 18px;
-	transition: 0.6s ease;
-    /* On hover, add a black background color with a little bit see-through */
-   &:hover, &:hover {
- background-color: rgba(255, 255, 255, 0.8);
-}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  /* On hover, add a black background color with a little bit see-through */
+  &:hover,
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
 }
 /* Position the "next button" to the right */
 
 .next {
-	right: 0;
+  right: 0;
 }
 /* Caption text */
 
 .text {
-	color: #f2f2f2;
-	padding: 8px 12px;
-	position: absolute;
-	bottom: 15%;
-	left: 5%;
-	width: 100%;
- h1 {
- text-transform: uppercase;
- font-weight: 900;
-}
-p {
-	font-size: 1.5em;
-}
+  color: #f2f2f2;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
+  width: 100%;
+  h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  p {
+    font-size: 1.5em;
+  }
 }
 /* Number text (1/3 etc) */
 
 .numbertext {
-	color: #f2f2f2;
-	font-size: 12px;
-	padding: 8px 12px;
-	position: absolute;
-	top: 0;
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 /* The dots/bullets/indicators */
 
 #carousel-control-icon {
-	position: absolute;
+  position: absolute;
 }
 .dot {
-	cursor: pointer;
-	height: 15px;
-	width: 15px;
-	margin: 0 2px;
-	background-color: #bbb;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
-.active, .dot:hover {
-	background-color: #717171;
+.active,
+.dot:hover {
+  background-color: #717171;
 }
 /* Fading animation */
 
 .fade {
-	-webkit-animation-name: fade;
-	-webkit-animation-duration: 1.5s;
-	animation-name: fade;
-	animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
- @-webkit-keyframes fade {
- from {
- opacity: .4
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
- to {
- opacity: 1
-}
-}
- @keyframes fade {
- from {
- opacity: .4
-}
- to {
- opacity: 1
-}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /* Page Content
 -------------------------------------------------- */
 .site-content {
- section {
- .container {
- padding: 5em;
-}
- &:nth-of-type(1) {
- background-color: white;
-}
- &:nth-of-type(2) {
- background-color: $primary;
-}
-}
+  section {
+    .container {
+      padding: 5em;
+
+      .col-md-12 {
+        text-align: center;
+        text-transform: uppercase;
+        h1 {
+			font-weight: 900;
+		}
+      }
+    }
+    &:nth-of-type(1) {
+      background-color: white;
+    }
+    &:nth-of-type(2) {
+      background-color: $primary;
+    }
+  }
 }
 #page-content {
-	display: block;
-	width: 100%;
- .container {
- //position: relative;
- text-align: center;
- color: white !important;
- h1 {
- text-transform: uppercase;
- font-weight: 900;
-}
- p {
- font-size: 1.5em;
-}
-}
+  display: block;
+  width: 100%;
+  .container {
+    //position: relative;
+    text-align: center;
+    color: white !important;
+    h1 {
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+    p {
+      font-size: 1.5em;
+    }
+  }
 }
 /* Slide in Overlay */
 .figure {
- .overlay {
- position: absolute;
- top: 0;
- bottom: 0;
- left: 0;
- right: 0;
- //height: 100%;
- //width: 100%;
- opacity: 0;
- transition: .5s ease;
- background-color: $primary;
- padding: 1rem;
- p {
- color: white;
- //text-align: center;
- //font-size: 1.2em;
-}
-}
- &:hover .overlay {
- opacity: 1;
-}
-.figure-caption {
-	text-transform: uppercase;
-	font-weight: 700;
-}
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    //height: 100%;
+    //width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: $primary;
+    padding: 1rem;
+    p {
+      color: white;
+      //text-align: center;
+      //font-size: 1.2em;
+    }
+  }
+  &:hover .overlay {
+    opacity: 1;
+  }
+  .figure-caption {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
 }
 
 /* Footer widgets
@@ -261,41 +281,45 @@ p {
 $widgets: #202020;
 $widgets-text: lighten($widgets, 50%);
 #widgets {
- background-color: $widgets;
-	font-size: .9em;
- h1, h2, h3, h4 {
- color: white;
- font-weight: 700;
- font-size: 1.2em;
- text-transform: uppercase;
-}
-p {
- color: $widgets-text;
-}
+  background-color: $widgets;
+  font-size: 0.9em;
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: white;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-transform: uppercase;
+  }
+  p {
+    color: $widgets-text;
+  }
 }
 .contact {
- color: $widgets-text;
- strong, span {
- color: $secondary;
-}
-.material-icons {
-	font-size: 1.2em;
- color: $secondary;
-}
-hr {
-	margin: .5rem 0;
- border-top: 1px solid $widgets-text;
-}
+  color: $widgets-text;
+  strong,
+  span {
+    color: $secondary;
+  }
+  .material-icons {
+    font-size: 1.2em;
+    color: $secondary;
+  }
+  hr {
+    margin: 0.5rem 0;
+    border-top: 1px solid $widgets-text;
+  }
 }
 /* Footer
 -------------------------------------------------- */
 .site-footer {
-	text-align: center;
-	width: 100%;
-	/* Set the fixed height of the footer here */
-	height: 60px;
-	line-height: 60px;
-    /* Vertically center the text there */
-    background-color: $primary;
-	color: white;
+  text-align: center;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px;
+  /* Vertically center the text there */
+  background-color: $primary;
+  color: white;
 }
