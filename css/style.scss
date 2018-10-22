@@ -278,7 +278,7 @@ a {
 
 /* Footer widgets
 -------------------------------------------------- */
-$widgets: #202020;
+$widgets: (#202020);
 $widgets-text: lighten($widgets, 50%);
 #widgets {
   background-color: $widgets;
